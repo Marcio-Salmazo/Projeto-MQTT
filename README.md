@@ -77,7 +77,7 @@ Após a instalação do ambiente de desenvolvimento e dos drivers necessários p
 
 O diagrama de circuito original (utilizando apenas o sensor de LDR e o LED) é exibido na imagem a baixo:
 
-![Diagrama do circuito](imagens/esquema eletronico base.png)
+![Diagrama do circuito](imagens/esquema%20eletronico%20base.png)
 
 ***OBSERVAÇÃO 1*** - O led é ligado no pino D1.\
 ***OBSERVAÇÃO 2*** - O valor do LDR é obtido por meio de um divisor de tensão e sua saída é ligada no pino analógico A0.
@@ -86,13 +86,13 @@ O diagrama de circuito original (utilizando apenas o sensor de LDR e o LED) é e
 
 O diagrama de circuito utilizado para implentar apenas o sensor de proximidade (A fim de se familiarizar com a operação do mesmo) é exibido na imagem a baixo:
 
-![Diagrama do circuito com HCSR04](imagens/esquema eletronico para o HCSR04.png)
+![Diagrama do circuito com HCSR04](imagens/esquema%20eletronico%20para%20o%20HCSR04.png)
 
 ---
 
 O diagrama de circuito utilizado para implentar  o sensor de proximidade ao ESP-8266, utilizando-se dos recursos concedido pelo protocolo MQTT é exibido na imagem a baixo:
 
-![Integração do HCSR04 ao MQTT](imagens/esquema eletronico para o ESP8266 com HCSR04.png)
+![Integração do HCSR04 ao MQTT](imagens/esquema%20eletronico%20para%20o%20ESP8266%20com%20HCSR04.png)
 
 ***OBSERVAÇÃO 1*** - O ESP concede apenas 3.3V e em razão disso, é necessário que a alimentação do sensor seja feita por uma fonte externa que disponibilize 5V (Na imagem são utilizadas 3 pilhas apenas como representação).\
 ***OBSERVAÇÃO 2*** - O valor disparado pelo pino ECHO é de 5 volts, por isso, é necessário a implementação de um divisor de tensão, a fim de reduzir o sinal para 3.3v (Em conformidade com as especificações do NodeMCU).
